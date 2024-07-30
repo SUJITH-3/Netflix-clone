@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+body{
+   background-color: rgb(13, 3, 27);
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: aliceblue;
+}
+.parentcontainer{
+    width: 95%;
+    height:100%;
+    margin: auto; 
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.title{
+    height: 100px;
+}
+
+button{
+    background-color:rgb(229, 9, 20);
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 15px;
+    border-style: none;
+    border-radius: 5px;
+    padding: 7px 12px;
+}
+button a{
+    text-decoration: none;
+    color: aliceblue;
+}
+button:hover{
+    background-color: rgb(165, 42, 42);
+    cursor: pointer;
+
+}
+#getstarted:hover{
+    background-color: rgba(165, 42, 42);
+    cursor: pointer;
+}
+select{
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding: 7px 9px;
+
+}
+.maincontent{
+    background:linear-gradient(65.68deg, rgba(0, 8, 29, 0.6) 9.51%, rgba(53, 13, 49, 0.6) 72.89%, rgba(132, 5, 25, 0.6) 101.01%),linear-gradient(102.21deg, rgba(0, 0, 0, 0.04) 16.09%, rgba(1, 1, 1, 0.17) 39.27%, rgba(1, 1, 1, 0.24) 64.25%, rgba(4, 4, 4, 0.8) 96.63%),url('main.jpg');
+    height:640px;
+    background-size: cover;
+    border-radius: 30px;
+    position: relative;
+}
+.textcontent{
+    position:absolute;
+    top: 140px;
+    left: 100px;
+    color: aliceblue; 
+}
+h1{
+    font-size: 65px;
+    font-weight: 750;
+}
+h2{
+    margin-bottom: 30px;
+}
+p{
+    font-size: 20px;
+}
+input{
+    background-color: rgba(30, 28, 28,.7);
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.485);
+    color: aliceblue;
+    font-size: 20px;
+    margin-right: 10px;
+    width: 60%;
+    margin-top: 40px;
+}
+#getstarted{
+    background-color:rgb(229, 9, 20);
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 20px;
+    border-style: none;
+    border-radius: 5px;
+    padding:15px 20px;
+    
+}
+input:focus{
+    border: 2px solid white;
+}
+.container{
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background:linear-gradient(146.51deg, rgba(0, 8, 29, 0.75) 0%, rgba(53, 13, 49, 0.6) 80.34%, rgba(132, 5, 25, 0.6) 110.79%);
+}
+.box1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.text1{
+    width:50%;
+    margin-left: 120px;
+    margin-top: 50px;
+}
+.image1{
+    width:40%;
+    margin-right: 90px;
+    margin-top: 80px;
+}
+.specialh1{
+    font-size: 55px;
+    font-weight: 750;
+    margin-bottom: 15px;
+}
+.container2{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    background-color: rgb(13, 3, 27);;
+    margin-top: 80px;
+}
+.container3{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+.division{
+    background-color:rgba(19, 33, 68, 1);
+    font-size: 25px;
+    margin-bottom: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+#h1{
+    font-size: 35px;
+}
+.division:hover{
+    background-color: rgba(30, 48, 96);
+    cursor: pointer;
+}
+.answer{
+    background-color:rgba(19, 33, 68, 1);
+    font-size: 25px;
+    margin-bottom: 10px;
+    padding: 20px;
+    margin-top:-8px;
+    display:none; 
+}
+.specialclass{
+    display: block;
+}
+#input2{
+    width: 35%;
+}
+.footercontainer{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+footer{
+    margin-top: 130px;
+    margin-bottom: 50px;
+}
+li a{
+    color: aliceblue;
+    
+}
+ul li{
+    list-style: none;
+    padding-bottom: 30px;
+}
+#footerp{
+    margin-top: 30px;
+    font-size: 15px;
+}
+.horizontal_line{
+    background-color:#252238;
+    width: 100%;
+    height: 8px;
+}
+
+@media screen and (max-width:380px)
+{
+    header
+    {
+        display: block;
+    }
+    .title{
+        width: 120px;
+    }
+}
+@media (min-width:850px) and (max-width:1100px)
+{
+    .image1{
+        width: 100%;
+        height: 100%;
+    }
+    .text1{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+}
+@media (min-width:700px) and (max-width:850px)
+{
+    .specialh1{
+        font-size: 30px;
+    }
+    .specialp{
+        font-size: 15px;
+    }
+    .image1{
+        width: 100%;
+        height: 100%;
+        margin-right: 30px;
+    }
+    .text1{
+        margin-left: 50px;
+        margin-right: 40px;
+    }
+
+}
+@media (max-width:600px)
+{
+    .box1{
+        display: block;
+    }
+    #input2{
+        width: 100%;
+    }
+    .footercontainer{
+        flex-direction: column;
+    }
+}
+@media (min-width:450px) and (max-width:700px)
+{
+    .textcontent{
+        top:110px;
+        left: 90px;
+    }
+    .lines{
+        font-size: 30px;
+    }
+    .title{
+        height: 80px;
+    }
+    input{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .specialh1{
+        font-size: 30px;
+    }
+    .specialp{
+        font-size: 15px;
+    }
+    .image1{
+        width: 100%;
+        height: 100%;
+        margin-right:30px;
+        margin-top: 20px;
+    }
+    .text1{
+        margin-left: 50px;
+        margin-right: 40px;
+    }
+}
+@media (max-width:450px){
+    .textcontent{
+        top:80px;
+        left: 40px;
+    }
+    .lines{
+        font-size: 20px;
+    }
+    .title{
+        height: 70px;
+    }
+    input{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .specialh1{
+        font-size: 30px;
+    }
+    .specialp{
+        font-size: 15px;
+    }
+    .image1{
+        width: 100%;
+        height: 100%;
+        margin-right:10px;
+        margin-top: 30px;
+    }
+    .text1{
+        margin-left: 60px;
+        margin-top: 0px;
+    }
+    
+
+}
